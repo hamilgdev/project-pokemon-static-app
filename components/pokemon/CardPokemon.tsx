@@ -4,7 +4,7 @@ import { Card, Row, Text } from '@nextui-org/react';
 
 import { ListPokemon } from 'interfaces/pokemon-list';
 
-export const CardPokemon: FC<ListPokemon> = ({ name, id, image }) => {
+export const CardPokemon: FC<ListPokemon> = ({ id, name, image }) => {
   const router = useRouter();
 
   const handleTransitionPokemon = () => router.push(`/pokemon/${id}`);
